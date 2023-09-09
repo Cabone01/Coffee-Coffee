@@ -1,6 +1,6 @@
 # Coffee-Coffee
 
-For this project, I initially wanted to create an accurate supervised learning model for the dataset and test some new libraries out. 
+For this project, I initially wanted to create an accurate supervised learning model for the dataset and test some new libraries. 
 The two new libraries I utilized here were Lazypredict and Pycaret. As I worked with both of these libraries, I began curious about 
 how they compare to one another as I noticed they performed rather differently. So this project changed to seeing how these two libraries performed 
 compared to me doing the models myself.    
@@ -9,7 +9,8 @@ Now before we see that performance, we need to discuss the features used which a
 Total Cup Points, Aroma, Flavor, Aftertaste, Acidity, Body, Balance, Uniformity, Clean Cup, and Sweetness. 
 The target column we will be using is the Total Cup Points which is determined by the other factors listed.    
     
-Picture    
+![image](https://github.com/Cabone01/Coffee-Coffee/assets/89541481/9c46e06e-c593-4b49-b2e0-818ed736f9dc)
+    
     
 The model above gives us a look at the correlation between the features used. Besides Uniformity which does not correlate at all with anything, 
 we can see that each factor has a strong positive correlation with Total Cup Points. Normally I would remove the Uniformity factor since it does 
@@ -20,15 +21,17 @@ not serve any benefit, but for this occasion, I decided to leave it in.
 So to compare the performance of libraries and my models, I made sure to use models that occurred in both libraries. 
 Those are LogisticRegression, DecisionTreeClassifier, RandomForestClassifier, LinearDiscriminantAnalysis, ExtraTreesClassifier, KNeighborsClassifier, RidgeClassifier, and AdaBoostClassifier.    
     
-Picture    
+![image](https://github.com/Cabone01/Coffee-Coffee/assets/89541481/59f55b30-eab3-4148-8531-728cc1eb4fcd)
+    
     
 So this model here is showing us the accuracy of each machine learning model based on the library and my own labeled as None. 
 For the accuracy of my models, I used the testing score I obtained from each of my models. Now looking at the model, we can see 
 that my models and Lazypredict's models performed almost the same in accuracy. With Pycaret, their model's accuracy didn't match my own but were not too far off.    
     
-Picture    
+![image](https://github.com/Cabone01/Coffee-Coffee/assets/89541481/1fe9a3bc-4ef7-42d0-b510-1ca2c0211c1a)
     
-Now this one cluster chart is really interesting. Here we get to see that Lazypredict was just as quick to fit and test the models compared to my own. 
+    
+Now this one cluster chart is interesting. Here we get to see that Lazypredict was just as quick to fit and test the models compared to my own. 
 It goes without saying that Pycaret is significantly slower compared to LazyPredict and my own.    
     
 ## Conculsion
